@@ -2,9 +2,9 @@ import React from 'react';
 import { CgWorkAlt } from 'react-icons/cg';
 import { FaReact } from 'react-icons/fa';
 import { LuGraduationCap } from 'react-icons/lu';
-import corpcommentImg from '../public/corpcomment.png';
-import rmtdevImg from '../public/rmtdev.png';
-import wordanalyticsImg from '../public/wordanalytics.png';
+import RamsaysDetailingImg from '../public/ramsaysdetailing.png';
+import FacialRecognitionImg from '../public/facialrecognition.png';
+import NginxImg from '../public/nginx.png';
 
 export const links = [
   {
@@ -35,26 +35,26 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: 'Graduated bootcamp',
-    location: 'Miami, FL',
+    title: 'Graduated High School',
+    location: 'Ottawa, ON',
     description:
-      'I graduated after 6 months of studying. I immediately found a job as a front-end developer.',
+      'I graduated high school with computer science and computer engineering classes',
     icon: React.createElement(LuGraduationCap),
     date: '2019',
   },
   {
-    title: 'Front-End Developer',
-    location: 'Orlando, FL',
+    title: 'Graduated College',
+    location: 'Ottawa, ON',
     description:
-      'I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.',
-    icon: React.createElement(CgWorkAlt),
-    date: '2019 - 2021',
+      'I Graduated 2 year program for computer science at Algonquin College. This gave me many skills like mobile and web develoment.',
+    icon: React.createElement(LuGraduationCap),
+    date: '2020 - 2022',
   },
   {
-    title: 'Full-Stack Developer',
-    location: 'Houston, TX',
+    title: 'Self-Employed Full-Stack Developer',
+    location: 'Ottawa, ON',
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I'm now looking for a full-stack developer role while working on my dream app and building my portfolio to get a full time job. My stack includes React, Next.js, TypeScript, Tailwind and MongoDB.",
     icon: React.createElement(FaReact),
     date: '2021 - present',
   },
@@ -62,26 +62,36 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: 'CorpComment',
+    title: 'Ramsay\'s Detailing',
     description:
-      'I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.',
-    tags: ['React', 'Next.js', 'MongoDB', 'Tailwind', 'Prisma'],
-    imageUrl: corpcommentImg,
+      'I\'ve been working on my dream web applicaiton for a while now. It\'s going to be a world wide service site.',
+    tags: ['Three JS', 'MongoDB', 'Tailwind', 'Express', 'Google Oauth', 'JWT'],
+    imageUrl: RamsaysDetailingImg,
+    url: 'https://www.ramsaysdetailing.ca'
   },
   {
-    title: 'rmtDev',
+    title: 'Facial Recognition Web App',
     description:
-      'Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.',
-    tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'Redux'],
-    imageUrl: rmtdevImg,
+      'I made a web app that allows you to use facial recognition on any device. The user can create or delete faces from the system.',
+    tags: ['React', 'TypeScript', 'Next.js', 'CSS'],
+    imageUrl: FacialRecognitionImg,
+    url: 'https://facialrecognition.ramsaysdetailing.ca'
   },
   {
-    title: 'Word Analytics',
+    title: 'Nginx Server',
     description:
-      'A public web app for quick analytics on text. It shows word count, character count and social media post limits.',
-    tags: ['React', 'Next.js', 'SQL', 'Tailwind', 'Framer'],
-    imageUrl: wordanalyticsImg,
+      'All of my projects are hosted on an Nginx server running on a hyper-v virtual machine using linux and a vpn with a dedicated ip service.',
+    tags: ['Java', 'Vite', 'React', 'Tailwind', 'Framer'],
+    imageUrl: NginxImg,
+    url: 'http://nginx.ramsaysdetailing.ca'
   },
+  // {
+  //   title: 'Andriod Emulator Web App',
+  //   description:
+  //     'An Android emulator using NoVNC to host the device which has a simple android app I made during collage.',
+  //   tags: ['Java', 'Vite', 'React', 'Tailwind', 'Framer'],
+  //   imageUrl: wordanalyticsImg,
+  // },
 ] as const;
 
 export const skillsData = [
@@ -92,16 +102,14 @@ export const skillsData = [
   'React',
   'Next.js',
   'Node.js',
+  'Nginx',
+  'Three JS',
+  'Server Hosting',
   'Git',
   'Tailwind',
-  'Prisma',
   'MongoDB',
-  'Redux',
-  'GraphQL',
-  'Apollo',
   'Express',
   'PostgreSQL',
   'Python',
-  'Django',
   'Framer Motion',
 ] as const;
